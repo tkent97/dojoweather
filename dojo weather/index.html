@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="classitems">
+                <h1>Dojo Weather</h1>
+                <ul>
+                    <h2 onclick="loadreport()"><li>Burbank</li></h2>
+                    <h2 onclick="loadreport()"><li>Chicago</li></h2>
+                    <h2 onclick="loadreport()"><li>Dallas</li></h2>
+                </ul>
+            </div>
+        <main>
+            <div class="content">
+                <div class="headerrow">
+                    <h2>San Jose</h2> 
+                    <form>
+                        <label for="temperature">show temperature in</label>
+                        <select name="temperature" id="temp">
+                          <option onclick="ctof()" value="f">F</option>
+                          <option onclick="ftoc()" value="c">C</option>
+                        </select>
+                      </form>
+                </div> 
+                <div class="weatherrow">
+                    <div class="col">
+                        <h2>Today</h2>
+                        <img src="./images/some_rain.png" alt="rain">
+                        <p>some rain</p>
+                        <ul>
+                            <li class="red temp">24°</li>
+                            <li class="blue temp">18°</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h2>Tomorrow</h2>
+                        <img src="./images/some_sun.png" alt="sun">
+                        <p>some sun</p>
+                        <ul>
+                            <li class="red temp">27°</li>
+                            <li class="blue temp">19°</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h2>Friday</h2>
+                        <img src="./images/some_clouds.png" alt="clouds">
+                        <p>some clouds</p>
+                        <ul>
+                            <li class="red temp">21°</li>
+                            <li class="blue temp">16°</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h2>Saturday</h2>
+                        <img src="./images/some_sun.png" alt="sun">
+                        <p>some sun</p>
+                        <ul>
+                            <li class="red temp">26°</li>
+                            <li class="blue temp">21°</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="cookies">
+            <img src="./images/cookie.png" alt="cookie">
+            <div class="cookieterm">
+                <h2>Stop! Cookie time</h2>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze out traffic. <a href="#">Read more</a></p>
+            </div>
+            <button onclick="hide(this)" type="button" >I accept</button>
+        </div>
+    </div>
+</body>
+</html>
